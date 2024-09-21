@@ -1,0 +1,92 @@
+    .facility-card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .facility-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .facility-card:hover .icon {
+        background-color: #f97316;
+        color: white; 
+    }
+
+    .facility-card:nth-child(1):hover .icon {
+        background-color: #f97316; 
+    }
+    .facility-card:nth-child(2):hover .icon {
+        background-color: #22c55e;
+    }
+    .facility-card:nth-child(3):hover .icon {
+        background-color: #facc15;
+    }
+    .facility-card:nth-child(4):hover .icon {
+        background-color: #3b82f6;
+    }
+
+    .icon {
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .cultural-activities {
+        background-color: #f8fafc;
+      }
+      
+      .text-section h2 {
+        color: #2c3e50; 
+      }
+      
+      .text-section p {
+        color: #7f8c8d; 
+      }
+      
+      .cultural-images {
+        position: relative;
+      }
+      
+      .large-circle,
+      .medium-circle,
+      .small-circle {
+        border: 8px solid white;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); 
+      }
+      
+      .large-circle {
+        animation: float1 5s infinite ease-in-out; 
+      }
+      
+      .medium-circle {
+        animation: float2 7s infinite ease-in-out;
+      }
+      
+      .small-circle {
+        animation: float3 4s infinite ease-in-out;
+      }
+      
+      @keyframes float1 {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      
+      @keyframes float2 {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+      }
+      
+      @keyframes float3 {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-7px); }
+      }
+      
+      @media screen and (max-width: 1024px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      
+        .large-circle {
+          width: 48px;
+          height: 48px;
+        }
+      }
+      
+      
